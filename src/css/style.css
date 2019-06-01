@@ -10,43 +10,119 @@ body h2 {
 a:hover {
   text-decoration: none;
 }
-.header {
-  position: relative;
+.button {
+  margin: 0;
+  padding: 23px 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  background-color: #26d3c8;
+}
+.main {
   background: url(../img/header-bg.jpg) top no-repeat;
-  background-size: cover;
+  background-size: 100%;
+}
+.main .header {
+  position: static;
   padding-top: 15px;
   color: #ffffff;
 }
-.header .logo-text {
+.main .header .logo-text {
   margin-top: 7px;
   line-height: 6px;
 }
-.header .logo-text h4 {
+.main .header .logo-text h4 {
   font-size: 20px;
   font-weight: bold;
 }
-.header .switch {
+.main .header .switch {
   font-weight: bold;
   text-transform: uppercase;
 }
-.header nav {
-  margin: 0;
-  padding: 0;
+.main .radiobutton {
+  display: none;
 }
-.header nav ul {
-  margin-top: 50px;
-  text-align: center;
-}
-.header nav ul li {
-  display: inline-block;
-  padding: 20px 22px;
-}
-.header nav ul li:hover {
+.main .radiobutton:checked + label {
   background-color: rgba(63, 58, 193, 0.92);
 }
-.header nav ul li a {
+.main input[id="tab-1"]:checked ~ .main-content .tab-1,
+.main input[id="tab-2"]:checked ~ .main-content .tab-2,
+.main input[id="tab-3"]:checked ~ .main-content .tab-3,
+.main input[id="tab-4"]:checked ~ .main-content .tab-4,
+.main input[id="tab-5"]:checked ~ .main-content .tab-5,
+.main input[id="tab-6"]:checked ~ .main-content .tab-6,
+.main input[id="tab-7"]:checked ~ .main-content .tab-7 {
+  display: block;
+}
+.main label {
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 55px;
+  padding: 20px 22px;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
+}
+.main-content {
+  position: relative;
+  color: black;
+}
+.main-content .content {
+  display: none;
+}
+.main-content-metro input {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 0;
+  width: 100%;
+  height: 35px;
+  font-size: 15px;
+  border-color: rgba(63, 58, 193, 0.92);
+  background: url(../img/icon.png) left no-repeat;
+  padding-left: 33px;
+}
+.main-content-metro-slider {
+  margin-top: 45px;
+}
+.main-content-metro-slider-item {
+  display: inline-block;
+}
+.main-content-metro-slider-item .metro-text {
+  position: absolute;
+  padding: 12px 12px;
+  width: 250px;
+  transform: translate(180%, -100%);
+  background-color: #ffffff;
+  opacity: 0.7;
+  text-align: center;
+  z-index: 1;
+}
+.main-content-metro-slider-item .metro-text h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.main-content-metro-slider-item .metro-text p {
+  margin-top: 50px;
+  line-height: 14px;
+  text-align: justify;
+}
+.main-content-metro-slider-item .metro-text-btn {
+  background-color: rgba(63, 58, 193, 0.92);
+}
+.main-navbtn-prev {
+  position: relative;
+  background-color: rgba(63, 58, 193, 0.92);
+  padding: 9px 12px;
+  z-index: 1;
+  transform: translateY(930%);
+}
+.main-navbtn-next {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 9px 12px;
+  margin-left: 43px;
+  transform: translateY(-100%);
 }

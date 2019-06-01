@@ -16,49 +16,141 @@ body{
 a:hover{
 	text-decoration: none;
 }
-.header{
-	position: relative;
+
+.button{
+	margin: 0;
+	padding: 23px 50px;
+	text-align: center;
+	text-transform: uppercase;
+	color: @light;
+	border:none;
+	background-color: @color-btn;
+}
+
+.main{
 	background: url(../img/header-bg.jpg) top no-repeat;
-	background-size: cover;
-	padding-top: 15px;
-	color:@light;
-	.logo-text{
-		margin-top: 7px;
-		line-height: 6px;
-		h4{
-			font-size: 20px;
+	background-size: 100%;
+	.header{	//шапка
+		position: static;
+		
+		padding-top: 15px;
+		color:@light;
+		.logo-text{
+			margin-top: 7px;
+			line-height: 6px;
+			h4{
+				font-size: 20px;
+				font-weight: bold;
+			}
+		}
+		.switch{
 			font-weight: bold;
+			text-transform: uppercase;
 		}
 	}
-	.switch{
-		font-weight: bold;
-		text-transform: uppercase;
+
+	.radiobutton{	//обозначение нажатия кнопки
+		display: none;
+		&:checked + label{
+			background-color: @blue-color;
+		}
 	}
-	nav{
-		margin: 0;
-		padding: 0;
-		ul{
-			margin-top: 50px;
-			text-align: center;
-			li{
-				
+
+	input[id="tab-1"]:checked ~ .main-content .tab-1,
+	input[id="tab-2"]:checked ~ .main-content .tab-2,
+	input[id="tab-3"]:checked ~ .main-content .tab-3,
+	input[id="tab-4"]:checked ~ .main-content .tab-4,
+	input[id="tab-5"]:checked ~ .main-content .tab-5,
+	input[id="tab-6"]:checked ~ .main-content .tab-6,
+	input[id="tab-7"]:checked ~ .main-content .tab-7{
+		display: block;
+	}
+
+	label{	//стили меню
+		cursor: pointer;
+		display: inline-block;
+		margin-top: 55px;
+		padding: 20px 22px;
+		text-align: center;
+		font-size: 18px;
+		font-weight: bold;
+		color: @light;
+	}
+
+
+		
+	&-content{
+		position: relative;
+		color: black;
+		.content{				
+			display: none;
+		}
+
+		&-metro{	//стили первой страницы "о метрополитене"
+
+			input{	//строка поиска
+				position: relative;
 				display: inline-block;
-				padding: 20px 22px;
-				&:hover{
-					background-color: @blue-color;
-				}
-				a{
-					text-align: center;
-					font-size: 18px;
-					font-weight: bold;
-					color: @light;
+				margin-top: 20px;
+				padding: 0;
+				width: 100%;
+				height: 35px;
+				font-size: 15px;
+				border-color:@blue-color;
+				background: url(../img/icon.png) left no-repeat;
+				padding-left: 33px;
+			}
+
+			&-slider{	//слайдер с картинками
+				margin-top: 45px;
+				
+				&-item{
 					
+					display: inline-block;
+					.metro-text{
+						position: absolute;
+						padding: 12px 12px;
+						width: 250px;
+						transform: translate(180%, -100%);
+						background-color: @light;
+						opacity: 0.7;
+						text-align: center;
+						z-index: 1;
+						h3{
+							font-size: 12px;
+							text-transform: uppercase;
+						}
+						p{
+							margin-top: 50px;
+							line-height: 14px;
+							text-align: justify;
+						}
+						&-btn{
+							background-color: @blue-color;
+						}
+					}
 				}
 			}
 		}
 	}
-}
+	&-navbtn-prev{	//кнопка перелистывания картинок
+		position: relative;
+		background-color: @blue-color;
+		padding: 9px 12px;
+		z-index: 1;
+		
+		transform: translateY(930%);
 
+	}
+	&-navbtn-next{	//кнопка перелистывания картинок
+		position: absolute;
+		background-color: rgba(255, 255, 255, 0.5);
+		padding: 9px 12px;
+		margin-left: 43px;
+		transform: translateY(-100%);
+	}
+		
+}
 @media (max-width: 780px){
 
 }
