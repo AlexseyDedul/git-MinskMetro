@@ -160,7 +160,49 @@
 				<div class="section-header">
 					<h2>Полезная информация</h2>
 				</div>
+				<div class="info-slider">
 
+					<div class="info-slider-item">
+						<div class="info-slider-item-text">
+							<div class="circle">
+							<img src="img/info_icons/1.png" alt="">
+						</div>
+						<p>
+							Минский метрополитен  открыт <strong>29</strong> июня <strong>1984</strong> года.
+							Метрополитен - наиболее комфортабельный, надежный, экологически чистый вид городского пассажирского транспорта с достаточно высокой скоростью перевозки пассажиров.
+						</p>
+						</div>
+						<button class="button info-btn">Подробнее</button>
+					</div>
+
+					<div class="info-slider-item">
+						<div class="info-slider-item-text">
+							<div class="circle">
+
+							<img src="img/info_icons/2.png" alt="">
+						</div>
+						<p>
+							Оплата проезда производится посредством покупки жетона или электронного билета в пункте продажи проездных документов.
+							Подтверждением оплаты является отметка электронного билета в валидаторе автоматического контрольного пункта или прием автоматическим контрольным пунктом жетона.
+						</p>
+						</div>
+						<button class="button info-btn">Подробнее</button>
+					</div>
+
+					<div class="info-slider-item">
+						<div class="info-slider-item-text">
+							<div class="circle">
+							<img src="img/info_icons/3.png" alt="">
+						</div>
+						<p>
+							Настоящие Правила обязательны для выполнения всеми лицами, находящимися на территории метрополитена.
+							Порядок работы и ответственность должностных лиц перевозчика за обеспечение безопасности перевозок и культуры обслуживания пассажиров определяются законодательством.
+						</p>
+						</div>
+						<button class="button info-btn">Подробнее</button>
+					</div>
+
+				</div>
 			</div>
 		</section>
 
@@ -174,6 +216,35 @@
 				$('.main-content-metro-slider').slick({
 					prevArrow: '<button type="button" class="button main-navbtn-prev"><img src="img/prev.png"></button>',
 					nextArrow: '<button type="button" class="button main-navbtn-next"><img src="img/next.png"></button>'
+				});
+
+				$('.info-slider').slick({
+				  centerMode: true,
+				  centerPadding: '360px',
+				  slidesToShow: 1,
+				  slidesToScroll: 1,
+				  responsive: [
+				    {
+				      breakpoint: 768,
+				      settings: {
+				        arrows: false,
+				        centerMode: true,
+				        centerPadding: '40px',
+				        slidesToShow: 3
+				      }
+				    },
+				    {
+				      breakpoint: 480,
+				      settings: {
+				        arrows: false,
+				        centerMode: true,
+				        centerPadding: '40px',
+				        slidesToShow: 1
+				      }
+				    }
+				  ],
+				prevArrow: '<button type="button" class="button arrow info-navbtn-prev"><img src="img/prev.png"></button>',
+				nextArrow: '<button type="button" class="button arrow info-navbtn-next"><img src="img/next.png"></button>'
 				});
 			});
 		</script>

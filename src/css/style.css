@@ -3,7 +3,7 @@ body {
   font-size: 12px;
 }
 .section-header {
-  margin-top: 60px;
+  margin: 60px auto;
   padding: 0;
   text-align: center;
 }
@@ -22,6 +22,7 @@ a:hover {
   text-transform: uppercase;
   color: #ffffff;
   border: none;
+  border-radius: 5px;
   background-color: #26d3c8;
 }
 .main {
@@ -133,4 +134,52 @@ a:hover {
   padding: 7px 10px;
   margin-left: 40px;
   transform: translateY(-95%);
+}
+.info-slider-item {
+  text-align: center;
+}
+.info-slider-item-text {
+  border: 3px solid #26d3c8;
+  border-radius: 15px;
+  margin-left: 50px;
+  padding: 10px;
+  width: 300px;
+  height: 330px;
+  font-size: 15px;
+}
+.info-slider-item-text .circle {
+  width: 92px;
+  height: 92px;
+  border: 5px solid #26d3c8;
+  border-radius: 50%;
+  transform: translateX(100%);
+  color: #ffffff;
+}
+.info-slider-item-text .circle img {
+  display: block;
+  margin: 10px auto;
+}
+.info-btn {
+  margin: 10px 5px;
+}
+.info-navbtn-prev {
+  left: -20px;
+  background-size: 70%;
+}
+.info-navbtn-next {
+  right: -30px;
+  background-size: 70%;
+}
+.arrow {
+  position: absolute;
+  background-color: rgba(63, 58, 193, 0.92);
+  padding: 7px 10px;
+  border-radius: 50%;
+  border: none;
+  z-index: 99;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slick-active {
+  outline: none;
 }
