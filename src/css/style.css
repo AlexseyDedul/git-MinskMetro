@@ -2,9 +2,14 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
 }
-body h2 {
+.section-header {
+  margin-top: 60px;
+  padding: 0;
+  text-align: center;
+}
+.section-header h2 {
   line-height: 6px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
 }
 a:hover {
@@ -12,7 +17,7 @@ a:hover {
 }
 .button {
   margin: 0;
-  padding: 23px 50px;
+  padding: 20px 35px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -22,6 +27,7 @@ a:hover {
 .main {
   background: url(../img/header-bg.jpg) top no-repeat;
   background-size: 100%;
+  text-align: center;
 }
 .main .header {
   position: static;
@@ -30,10 +36,16 @@ a:hover {
 }
 .main .header .logo-text {
   margin-top: 7px;
-  line-height: 6px;
+  line-height: 3px;
+  text-align: left;
+}
+.main .header .logo-text h3 {
+  font-style: 20px;
+  font-weight: bold;
+  line-height: 14px;
 }
 .main .header .logo-text h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 .main .header .switch {
@@ -58,10 +70,10 @@ a:hover {
 .main label {
   cursor: pointer;
   display: inline-block;
-  margin-top: 55px;
-  padding: 20px 22px;
+  margin-top: 70px;
+  padding: 16px 18px;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   color: #ffffff;
 }
@@ -85,20 +97,14 @@ a:hover {
   padding-left: 33px;
 }
 .main-content-metro-slider {
-  margin-top: 45px;
-}
-.main-content-metro-slider-item {
-  display: inline-block;
+  margin-top: 10px;
 }
 .main-content-metro-slider-item .metro-text {
   position: absolute;
   padding: 12px 12px;
   width: 250px;
   transform: translate(180%, -100%);
-  background-color: #ffffff;
-  opacity: 0.7;
-  text-align: center;
-  z-index: 1;
+  background: rgba(255, 255, 255, 0.8);
 }
 .main-content-metro-slider-item .metro-text h3 {
   font-size: 12px;
@@ -113,16 +119,18 @@ a:hover {
   background-color: rgba(63, 58, 193, 0.92);
 }
 .main-navbtn-prev {
-  position: relative;
+  position: absolute;
   background-color: rgba(63, 58, 193, 0.92);
-  padding: 9px 12px;
+  padding: 7px 10px;
   z-index: 1;
+  border: none;
   transform: translateY(930%);
 }
 .main-navbtn-next {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 9px 12px;
-  margin-left: 43px;
-  transform: translateY(-100%);
+  border: none;
+  padding: 7px 10px;
+  margin-left: 40px;
+  transform: translateY(-95%);
 }

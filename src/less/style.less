@@ -5,10 +5,16 @@
 
 body{
 	font-family: 'Roboto', sans-serif;
-	font-size: 12px;
+	font-size: 12px;	
+}
+
+.section-header{
+	margin-top: 60px;
+	padding: 0;
+	text-align: center;
 	h2{
 		line-height: 6px;
-		font-size: 24px;
+		font-size: 22px;
 		font-weight: bold;
 	}
 }
@@ -19,7 +25,7 @@ a:hover{
 
 .button{
 	margin: 0;
-	padding: 23px 50px;
+	padding: 20px 35px;
 	text-align: center;
 	text-transform: uppercase;
 	color: @light;
@@ -30,6 +36,7 @@ a:hover{
 .main{
 	background: url(../img/header-bg.jpg) top no-repeat;
 	background-size: 100%;
+	text-align: center;
 	.header{	//шапка
 		position: static;
 		
@@ -37,9 +44,15 @@ a:hover{
 		color:@light;
 		.logo-text{
 			margin-top: 7px;
-			line-height: 6px;
+			line-height: 3px;
+			text-align: left;
+			h3{
+				font-style: 20px;
+				font-weight: bold;
+				line-height: 14px;
+			}
 			h4{
-				font-size: 20px;
+				font-size: 18px;
 				font-weight: bold;
 			}
 		}
@@ -69,14 +82,17 @@ a:hover{
 	label{	//стили меню
 		cursor: pointer;
 		display: inline-block;
-		margin-top: 55px;
-		padding: 20px 22px;
+		margin-top: 70px;
+		padding: 16px 18px;
 		text-align: center;
-		font-size: 18px;
+		font-size: 14px;
 		font-weight: bold;
 		color: @light;
 	}
+	
+	&-menu{
 
+	}
 
 		
 	&-content{
@@ -102,24 +118,25 @@ a:hover{
 			}
 
 			&-slider{	//слайдер с картинками
-				margin-top: 45px;
+				margin-top: 10px;
 				
 				&-item{
-					
-					display: inline-block;
 					.metro-text{
 						position: absolute;
+
 						padding: 12px 12px;
 						width: 250px;
 						transform: translate(180%, -100%);
-						background-color: @light;
-						opacity: 0.7;
-						text-align: center;
-						z-index: 1;
+						background: rgba(255, 255, 255, 0.8);
+						
+						
 						h3{
+							
 							font-size: 12px;
 							text-transform: uppercase;
 						}
+					
+						
 						p{
 							margin-top: 50px;
 							line-height: 14px;
@@ -134,20 +151,21 @@ a:hover{
 		}
 	}
 	&-navbtn-prev{	//кнопка перелистывания картинок
-		position: relative;
+		position: absolute;
 		background-color: @blue-color;
-		padding: 9px 12px;
+		padding: 7px 10px;
 		z-index: 1;
-		
+		border: none;
 		transform: translateY(930%);
 
 	}
 	&-navbtn-next{	//кнопка перелистывания картинок
 		position: absolute;
 		background-color: rgba(255, 255, 255, 0.5);
-		padding: 9px 12px;
-		margin-left: 43px;
-		transform: translateY(-100%);
+		border: none;
+		padding: 7px 10px;
+		margin-left: 40px;
+		transform: translateY(-95%);
 	}
 		
 }
