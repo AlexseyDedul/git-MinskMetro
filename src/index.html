@@ -76,9 +76,6 @@
 
 										<div class="metro-text">
 											<div class="metro-text-header">
-
-												<p>29 дек</p>
-											
 												<h3>
 													в новогодние праздники - <br> изменен график движения
 												</h3>
@@ -98,10 +95,7 @@
 										</div>
 										
 										<div class="metro-text">
-											<div class="metro-text-header">
-
-												<p>29 дек</p>
-											
+											<div class="metro-text-header">										
 												<h3>
 													в новогодние праздники - <br> изменен график движения
 												</h3>
@@ -123,9 +117,6 @@
 										
 										<div class="metro-text">
 											<div class="metro-text-header">
-
-												<p>29 дек</p>
-											
 												<h3>
 													в новогодние праздники - <br> изменен график движения
 												</h3>
@@ -165,12 +156,12 @@
 					<div class="info-slider-item">
 						<div class="info-slider-item-text">
 							<div class="circle">
-							<img src="img/info_icons/1.png" alt="">
-						</div>
-						<p>
-							Минский метрополитен  открыт <strong>29</strong> июня <strong>1984</strong> года.
-							Метрополитен - наиболее комфортабельный, надежный, экологически чистый вид городского пассажирского транспорта с достаточно высокой скоростью перевозки пассажиров.
-						</p>
+								<img src="img/info_icons/1.png" alt="">
+							</div>
+							<p>
+								Минский метрополитен  открыт <strong>29</strong> июня <strong>1984</strong> года.
+								Метрополитен - наиболее комфортабельный, надежный, экологически чистый вид городского пассажирского транспорта с достаточно высокой скоростью перевозки пассажиров.
+							</p>
 						</div>
 						<button class="button info-btn">Подробнее</button>
 					</div>
@@ -219,7 +210,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-10">
+					<div class="col-md-8">
 						<div class="news-content">
 							<div class="news-content-item">
 							<div class="date">
@@ -233,7 +224,7 @@
 						</div>
 						<div class="news-content-item">
 							<div class="date">
-								<strong>29</strong> дек
+								<strong>27</strong> дек
 							</div>
 							<img src="img/metro_image/2.jpg" width="200px" alt="">
 							<div class="news-content-item-text">
@@ -244,7 +235,7 @@
 						</div>
 						<div class="news-content-item">
 							<div class="date">
-								<strong>29</strong> дек
+								<strong>26</strong> дек
 							</div>
 
 							<img src="img/metro_image/3.jpg" width="200px" alt="">
@@ -257,7 +248,7 @@
 						</div>
 						<div class="news-content-item">
 							<div class="date">
-								<strong>29</strong> дек
+								<strong>17</strong> дек
 							</div>
 							<img src="img/metro_image/1.jpg" width="200px" alt="">
 
@@ -268,10 +259,56 @@
 
 						</div>
 						</div>
+						<a class="news-link" href="#">Все новости</a>
+					</div>
+
+					<div class="col-md-3 offset-1">
+						<button class="button news-btn">Наши вакансии <br> <img src="img/icons-news/1.png" width="80px" alt=""></button>
+						<button class="button news-btn">Фотогалерея станции <br> <img src="img/icons-news/2.png" width="80px" alt=""></button>
+						<button class="button news-btn">Безбарьерная среда <br><img src="img/icons-news/3.png" width="80px" alt=""></button>
 					</div>
 				</div>
 			</div>
 		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="section-header">
+					<h2>Похожие ресурсы</h2>
+				</div>
+				
+				<div class="footer-slider">
+					<img src="img/footer-image/image 2.png" alt="">
+					<img src="img/footer-image/image 3.png" alt="">
+					<img src="img/footer-image/image 4.png" alt="">
+					<img src="img/footer-image/image 5.png" alt="">
+					<img src="img/footer-image/image 6.png" alt="">
+					<img src="img/footer-image/image 7.png" alt="">
+				</div>
+				
+				<div class="row">
+					<div class="col-md-5">
+						<div class="footer-text">
+							<p>© Государственное предприятие "Минский Метрополитен", 2014 –2018</p>
+						</div>
+					</div>
+					<div class="col-md-5 offset-md-2">
+						<div class="footer-item">
+							<div class="footer-item-text">
+								<p>ТЕЛЕФОН ГОРЯЧЕЙ ЛИНИИ: 219-52-09 <br>
+								для получения справочно-консультационной информации <br>
+								(понедельник-пятница 9:00-12:00, 13:00-16:00)</p>
+							</div>
+							<button class="button footer-item-btn">Главная</button>
+							<button class="button footer-item-btn">Карта сайта</button>
+							<button class="button footer-item-btn">Контакты</button>
+							<p>Разработано - byHappy</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<link rel="stylesheet" href="slick/slick.css">
@@ -283,6 +320,30 @@
 				$('.main-content-metro-slider').slick({
 					prevArrow: '<button type="button" class="button main-navbtn-prev"><img src="img/prev.png"></button>',
 					nextArrow: '<button type="button" class="button main-navbtn-next"><img src="img/next.png"></button>'
+				});
+
+				$('.footer-slider').slick({
+					  
+				  infinite: true,
+				 
+				  slidesToShow: 6,
+				  slidesToScroll: 1,
+				  responsive: [
+				    {
+				      breakpoint: 600,
+				      settings: {
+				        slidesToShow: 2,
+				        slidesToScroll: 2
+				      }
+				    },
+				    {
+				      breakpoint: 480,
+				      settings: {
+				        slidesToShow: 1,
+				        slidesToScroll: 1
+				      }
+				    }
+				  ]
 				});
 
 				$('.info-slider').slick({

@@ -8,8 +8,12 @@ body{
 	font-size: 12px;	
 }
 
+section{
+	padding: 50px 0;
+}
+
 .section-header{
-	margin: 60px auto;
+	margin-bottom: 60px;
 	padding: 0;
 	text-align: center;
 	h2{
@@ -87,9 +91,7 @@ body{
 		color: @light;
 	}
 	
-	&-menu{
 
-	}
 
 		
 	&-content{
@@ -119,6 +121,7 @@ body{
 				
 				&-item{
 					.metro-text{
+							
 						position: absolute;
 
 						padding: 12px 12px;
@@ -126,22 +129,25 @@ body{
 						transform: translate(180%, -100%);
 						background: rgba(255, 255, 255, 0.8);
 						
-						
-						h3{
+						&-header{
+							h3{
+								
+								font-size: 12px;
+								text-transform: uppercase;
+							}
+						}
 							
-							font-size: 12px;
-							text-transform: uppercase;
-						}
-					
-						
-						p{
-							margin-top: 50px;
-							line-height: 14px;
-							text-align: justify;
-						}
+							p{
+								margin: 30px auto 65px;
+								line-height: 14px;
+								text-align: justify;
+								font-size: 11px;
+							}
+
 						&-btn{
 							background-color: @blue-color;
 						}
+					
 					}
 				}
 			}
@@ -178,11 +184,11 @@ body{
 				border: 3px solid @color-btn;
 				border-radius: 15px;
 				
-				margin-left: 50px;
+				margin-left: 70px;
 				padding: 10px;
-				width: 300px;
+				width: 240px;
 				height: 330px;
-				font-size: 15px;
+				font-size: 12px;
 				.circle{
 					
 					width: 92px;
@@ -190,18 +196,21 @@ body{
 					
 					border: 5px solid @color-btn;
 					border-radius: 50%;
-					transform: translateX(100%);
+					transform: translateX(70%);
 					color: @light;
 					img{
 						display: block;
 						margin: 10px auto;
 					}
 				}
+				p{
+					margin-top: 20px;
+				}
 			}	
 		}
 	}
 	&-btn{
-		margin: 10px 7px 60px 0;
+		margin: 10px 0 50px 0;
 	}
 
 	&-navbtn-prev{	//кнопка перелистывания картинок
@@ -222,7 +231,6 @@ body{
 			text-decoration: none;
 		}
 	}
-	//background: url(../img/info-bottom-bg.jpg) bottom no-repeat;
 }
 
 .arrow{
@@ -242,45 +250,99 @@ body{
 
 .news{
 	background: url(../img/news-bg-header.jpg) top no-repeat;
-	background-size: 100%;
-	&-header{
-		top: 50%;
-		transform: translateY(100%);
-		text-transform: uppercase;
-		text-align: left;
-		h3{
-			font-size: 20px;
-			font-weight: bold;
-			color:@light;
-		}		
-	}
+	background-size: 1440px 100px;
+	.container{
 
- 	&-content{
- 		
- 		&-item{
-			border: 2px solid @blue-color;
-			margin: 10px;
-			&-text{
-				display: inline-block;
-				h4{
-					font-size: 12px;	
-				}
-				font-size: 10px;
-			}
+	}
+		&-header{
+			text-transform: uppercase;
+			text-align: left;
+			h3{
+				font-size: 20px;
+				font-weight: bold;
+				color:@light;
+			}		
 		}
- 	}
+
+	 	&-content{
+	 		
+	 		&-item{
+				border: 2px solid @blue-color;
+				margin: 10px;
+				padding: 10px 0;
+				&-text{
+					display: inline-block;
+					h4{
+						font-size: 12px;
+						color: @blue-color;	
+						font-weight: bold;
+					}
+					font-size: 10px;
+				}
+				img{
+					width: 130px;
+					height: 80px;
+				}
+			}
+	 	}
+	&-btn{
+		display: block;
+		margin: 10px 0;
+		width: 100%;
+		box-shadow: 5px 10px 15px 0 rgba(0, 0, 0, 0.11);
+
+	}
+	&-link{
+		font-size: 12px;
+		color: #000;
+		margin-left: 10px;
+		border-bottom: 1px solid;	
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
 }
 .date{
 	display: inline-block;
 	padding: 10px;
 	margin-right: 10px;
 	background-color: @blue-color;
-	//border: none;
-	
 	height: 100%;
 	font-size: 15px;
 	color: @light;
 
+}
+.footer{
+	background: url(../img/footer-bg.jpg) bottom no-repeat;
+	background-size: 100%;
+		
+		&-slider{
+		text-align: center;
+		img{
+			margin-right: 110px;
+		}
+	}
+	
+	&-text{
+		left: 0;
+		top:50%;
+		transform: translateY(2000%);
+		color: @light;
+	}
+
+	&-item{
+		text-align: right;
+		font-size: 14px;
+			color: @light;
+		&-text{
+			margin-top: 150px;
+		}
+		&-btn{
+			margin: 40px 10px;
+			padding:  15px 20px;
+		}
+	}
 }
 @media (max-width: 780px){
 
