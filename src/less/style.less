@@ -19,10 +19,6 @@ body{
 	}
 }
 
-a:hover{
-	text-decoration: none;
-}
-
 .button{
 	margin: 0;
 	padding: 20px 35px;
@@ -172,10 +168,11 @@ a:hover{
 }
 
 .info{
+	text-align: center;
 	&-slider{
 
 		&-item{	
-			text-align: center;
+			
 			&-text{
 
 				border: 3px solid @color-btn;
@@ -204,7 +201,7 @@ a:hover{
 		}
 	}
 	&-btn{
-		margin: 10px 5px;
+		margin: 10px 7px 60px 0;
 	}
 
 	&-navbtn-prev{	//кнопка перелистывания картинок
@@ -215,6 +212,17 @@ a:hover{
 		right: -30px;
 		background-size: 70%;
 	}
+
+	&-link{
+		font-size: 14px;
+		color: black;
+		border-bottom: 1px solid;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	//background: url(../img/info-bottom-bg.jpg) bottom no-repeat;
 }
 
 .arrow{
@@ -232,6 +240,48 @@ a:hover{
 	outline: none;
 }
 
+.news{
+	background: url(../img/news-bg-header.jpg) top no-repeat;
+	background-size: 100%;
+	&-header{
+		top: 50%;
+		transform: translateY(100%);
+		text-transform: uppercase;
+		text-align: left;
+		h3{
+			font-size: 20px;
+			font-weight: bold;
+			color:@light;
+		}		
+	}
+
+ 	&-content{
+ 		
+ 		&-item{
+			border: 2px solid @blue-color;
+			margin: 10px;
+			&-text{
+				display: inline-block;
+				h4{
+					font-size: 12px;	
+				}
+				font-size: 10px;
+			}
+		}
+ 	}
+}
+.date{
+	display: inline-block;
+	padding: 10px;
+	margin-right: 10px;
+	background-color: @blue-color;
+	//border: none;
+	
+	height: 100%;
+	font-size: 15px;
+	color: @light;
+
+}
 @media (max-width: 780px){
 
 }

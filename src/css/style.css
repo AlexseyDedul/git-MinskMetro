@@ -12,9 +12,6 @@ body {
   font-size: 22px;
   font-weight: bold;
 }
-a:hover {
-  text-decoration: none;
-}
 .button {
   margin: 0;
   padding: 20px 35px;
@@ -135,7 +132,7 @@ a:hover {
   margin-left: 40px;
   transform: translateY(-95%);
 }
-.info-slider-item {
+.info {
   text-align: center;
 }
 .info-slider-item-text {
@@ -160,7 +157,7 @@ a:hover {
   margin: 10px auto;
 }
 .info-btn {
-  margin: 10px 5px;
+  margin: 10px 7px 60px 0;
 }
 .info-navbtn-prev {
   left: -20px;
@@ -169,6 +166,14 @@ a:hover {
 .info-navbtn-next {
   right: -30px;
   background-size: 70%;
+}
+.info-link {
+  font-size: 14px;
+  color: black;
+  border-bottom: 1px solid;
+}
+.info-link:hover {
+  text-decoration: none;
 }
 .arrow {
   position: absolute;
@@ -182,4 +187,39 @@ a:hover {
 }
 .slick-active {
   outline: none;
+}
+.news {
+  background: url(../img/news-bg-header.jpg) top no-repeat;
+  background-size: 100%;
+}
+.news-header {
+  top: 50%;
+  transform: translateY(100%);
+  text-transform: uppercase;
+  text-align: left;
+}
+.news-header h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.news-content-item {
+  border: 2px solid rgba(63, 58, 193, 0.92);
+  margin: 10px;
+}
+.news-content-item-text {
+  display: inline-block;
+  font-size: 10px;
+}
+.news-content-item-text h4 {
+  font-size: 12px;
+}
+.date {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  background-color: rgba(63, 58, 193, 0.92);
+  height: 100%;
+  font-size: 15px;
+  color: #ffffff;
 }
