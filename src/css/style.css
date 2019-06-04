@@ -136,6 +136,37 @@ section {
   margin-left: 40px;
   transform: translateY(-95%);
 }
+.main .subway {
+  text-align: justify;
+}
+.main .subway-header {
+  margin-top: 20px;
+  text-align: left;
+}
+.main .subway-header h2 {
+  font-size: 22px;
+  color: rgba(63, 58, 193, 0.92);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.main .subway-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.main .subway-head {
+  float: left;
+  margin: 7px 7px 7px 0;
+}
+.main .subway-list {
+  text-align: left;
+  list-style-image: url("../img/list-numeration.png");
+}
+.main .subway-list li {
+  margin-bottom: 15px;
+}
+.main .subway-image {
+  margin-top: 35px;
+}
 .info {
   text-align: center;
 }
