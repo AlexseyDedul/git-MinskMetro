@@ -63,9 +63,9 @@ section{
 		}
 	}
 
-	.radiobutton{	//обозначение нажатия кнопки
+	.radiobutton, .burger-btn{	//обозначение нажатия кнопки
 		display: none;
-		&:checked + label{
+		&:checked + .label-menu{
 			background-color: @blue-color;
 		}
 	}
@@ -80,7 +80,7 @@ section{
 		display: block;
 	}
 
-	label{	//стили меню
+	.label-menu{	//стили меню
 		cursor: pointer;
 		display: inline-block;
 		margin-top: 70px;
@@ -91,6 +91,9 @@ section{
 		color: @light;
 	}
 	
+	.menu-burger{
+		display: none;
+	}
 
 
 		
@@ -379,6 +382,169 @@ section{
 		}
 	}
 }
-@media (max-width: 780px){
+@media (max-width: 900px){
+	.main{
+		background: url(../img/mobile-header.jpg) top no-repeat;
+			background-size: 100%;
+		.header{
+			
+			.logo-text{
+				p{
+					display: none;
+				}
+			}
+		}
 
+		.menu-burger{
+			position: absolute;
+			display: block;
+			right: 0;
+			top: 0;
+			margin-right: 50px;
+			margin-top: 7px;
+		}
+
+		.burger-btn{	//обозначение нажатия кнопки
+			display: none;
+		}
+		
+		input[id="burg"]:checked ~ .burg{
+			display: block;
+		}
+		input[id="burg2"]:checked ~ .burg2{
+			display: none;
+		}
+		
+
+		.label-menu{	//стили меню
+			cursor: pointer;
+			background: @color-btn;
+			margin: 0;
+			padding: 10px 12px;
+			width: 200px;
+			text-align: center;
+			font-size: 10px;
+			right: 0;
+			transform: translateX(150%);
+			//font-weight: bold;
+			z-index: 999;
+			color: @light;
+		}
+		.metro-text{
+							
+			position: absolute;
+
+			padding: 12px 12px;
+			width: 250px;
+			transform: translate(105%, -100%);
+			background: rgba(255, 255, 255, 0.8);
+			
+			&-header{
+				h3{
+					
+					font-size: 12px;
+					text-transform: uppercase;
+				}
+			}
+				
+				p{
+					margin: 30px auto 65px;
+					line-height: 14px;
+					text-align: justify;
+					font-size: 11px;
+				}
+
+			&-btn{
+				background-color: @blue-color;
+			}
+		
+		}
+	}
+
+	.info{
+		text-align: center;
+		&-slider{
+
+			&-item{	
+				background: url(../img/mobile-header.jpg) bottom no-repeat;
+						background-size: 100% 300px;
+
+				&-text{
+					position: relative;
+					border: none;
+					transform: translate(20%, 30%);
+					margin-top: 0;
+					padding: 0;
+					
+					font-size: 12px;
+					.circle{
+						width: 92px;
+						height: 92px;
+						
+						background: @color-btn;
+						border-radius: 50%;
+						
+						
+						img{
+							display: block;
+							margin: 10px auto;
+						}
+					}
+					p{
+						margin-top: 20px;
+						transform: translateX(-17%);
+						color: @light;
+						font-size: 14px;
+						width: 350px;
+					}
+				}	
+			}
+		}		
+		&-link{
+			display: none;
+		}
+	}
+	
+	.news-btn{
+		position: relative;
+		display: inline-block;
+		padding: 15px 10px;
+		width: 30%;
+		padding-right: 5px;
+		font-size: 10px;
+		border: none;
+		background-color: @blue-color;
+		img{
+			width: 40px;
+		}
+	}
+
+	.footer{
+		background: url(../img/footer-bg.jpg) right bottom no-repeat;
+		background-size: cover;
+		.section-header{
+			display: none;
+		}
+		&-slider{
+			display: none;
+		}
+		
+		&-text{
+			font-size: 10px;
+		}
+
+		&-item{
+			
+			font-size: 10px;
+			&-text{
+				
+				//font-size: 10px;
+			}
+			&-btn{
+				padding: 5px 10px;
+				margin: 0;
+				margin-bottom: 33px;
+			}
+		}
+	}
 }

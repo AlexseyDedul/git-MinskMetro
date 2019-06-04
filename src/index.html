@@ -17,12 +17,12 @@
 					
 					<div class="row"><!--логотип-->
 
-						<div class="col-md-1">	
+						<div class="col-md-1 col-2">	
 							<div class="logo">	
 								<img src="img/Logo_Header.png" alt="Минский метрополитен">
 							</div>
 						</div>
-							<div class="col-md-2">
+							<div class="col-md-2 col-2">
 								<div class="logo-text">
 									<h3>Минский</h3>
 									<h4>Метрополитен</h4>
@@ -31,7 +31,7 @@
 								</div>
 							</div>
 						
-						<div class="col-md-1 offset-md-8">
+						<div class="col-md-1 offset-md-8 col-1 offset-3">
 							<div class="switch">
 								рус|бел
 							</div>
@@ -40,21 +40,26 @@
 					
 				</header>
 					
+				<input class="burger-btn" type="radio" name="tab1" id="burg" checked>
+				<label class="menu-burger" for="burg"><img src="https://img.icons8.com/color/48/000000/menu.png"></label>
+				<input class="burger-btn" type="radio" name="tab1" id="burg2">
+				<label class="menu-burger" for="burg2"><img src="https://img.icons8.com/color/48/000000/menu.png"></label>
 					
 				<input class="radiobutton" type="radio" name="tab" id="tab-1" checked>
-				<label for="tab-1">Главная</label>
+				<label class="label-menu burg  burg2" for="tab-1">Главная</label>
 				<input class="radiobutton" type="radio" name="tab" id="tab-2">
-				<label for="tab-2">О метрополитене</label>
+				<label class="label-menu burg  burg2" for="tab-2">О метрополитене</label>
 				<input class="radiobutton" type="radio" name="tab" id="tab-3">
-				<label for="tab-3">Схема линий</label>
+				<label class="label-menu burg  burg2" for="tab-3">Схема линий</label>
 				<input class="radiobutton" type="radio" name="tab" id="tab-4">
-				<label for="tab-4">Обращения граждан</label>
+				<label class="label-menu burg  burg2" for="tab-4">Обращения граждан</label>
 				<input class="radiobutton" type="radio" name="tab" id="tab-5">
-				<label for="tab-5">Вакансии</label>
+				<label class="label-menu burg  burg2" for="tab-5">Вакансии</label>
 				<input class="radiobutton" type="radio" name="tab" id="tab-6">
-				<label for="tab-6">Услуги</label>
+				<label class="label-menu burg  burg2" for="tab-6">Услуги</label>
 				<input class="radiobutton" type="radio" name="tab" id="tab-7">
-				<label for="tab-7">О нас</label>
+				<label class="label-menu burg  burg2" for="tab-7">О нас</label>
+
 
 				<div class="main-content">
 					<div class="content main-content-metro tab-1">
@@ -307,7 +312,7 @@
 						<a class="news-link" href="#">Все новости</a>
 					</div>
 
-					<div class="col-md-3 offset-1">
+					<div class="col-md-3 offset-1 col-12">
 						<button class="button news-btn">Наши вакансии <br> <img src="img/icons-news/1.png" width="80px" alt=""></button>
 						<button class="button news-btn">Фотогалерея станции <br> <img src="img/icons-news/2.png" width="80px" alt=""></button>
 						<button class="button news-btn">Безбарьерная среда <br><img src="img/icons-news/3.png" width="80px" alt=""></button>
@@ -372,23 +377,7 @@
 				  infinite: true,
 				 
 				  slidesToShow: 6,
-				  slidesToScroll: 1,
-				  responsive: [
-				    {
-				      breakpoint: 600,
-				      settings: {
-				        slidesToShow: 2,
-				        slidesToScroll: 2
-				      }
-				    },
-				    {
-				      breakpoint: 480,
-				      settings: {
-				        slidesToShow: 1,
-				        slidesToScroll: 1
-				      }
-				    }
-				  ]
+				  slidesToScroll: 1
 				});
 
 				$('.info-slider').slick({
@@ -398,21 +387,14 @@
 				  slidesToScroll: 1,
 				  responsive: [
 				    {
-				      breakpoint: 768,
+				      breakpoint: 900,
 				      settings: {
-				        arrows: false,
+				        //arrows: false,
 				        centerMode: true,
-				        centerPadding: '40px',
-				        slidesToShow: 3
-				      }
-				    },
-				    {
-				      breakpoint: 480,
-				      settings: {
-				        arrows: false,
-				        centerMode: true,
-				        centerPadding: '40px',
-				        slidesToShow: 1
+				        centerPadding: '20px',
+				        slidesToShow: 1,
+				        slidesToScroll: 3
+
 				      }
 				    }
 				  ],

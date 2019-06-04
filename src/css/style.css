@@ -53,10 +53,12 @@ section {
   font-weight: bold;
   text-transform: uppercase;
 }
-.main .radiobutton {
+.main .radiobutton,
+.main .burger-btn {
   display: none;
 }
-.main .radiobutton:checked + label {
+.main .radiobutton:checked + .label-menu,
+.main .burger-btn:checked + .label-menu {
   background-color: rgba(63, 58, 193, 0.92);
 }
 .main input[id="tab-1"]:checked ~ .main-content .tab-1,
@@ -68,7 +70,7 @@ section {
 .main input[id="tab-7"]:checked ~ .main-content .tab-7 {
   display: block;
 }
-.main label {
+.main .label-menu {
   cursor: pointer;
   display: inline-block;
   margin-top: 70px;
@@ -77,6 +79,9 @@ section {
   font-size: 14px;
   font-weight: bold;
   color: #ffffff;
+}
+.main .menu-burger {
+  display: none;
 }
 .main-content {
   position: relative;
@@ -308,4 +313,132 @@ section {
 .footer-item-btn {
   margin: 40px 10px;
   padding: 15px 20px;
+}
+@media (max-width: 900px) {
+  .main {
+    background: url(../img/mobile-header.jpg) top no-repeat;
+    background-size: 100%;
+  }
+  .main .header .logo-text p {
+    display: none;
+  }
+  .main .menu-burger {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    margin-right: 50px;
+    margin-top: 7px;
+  }
+  .main .burger-btn {
+    display: none;
+  }
+  .main input[id="burg"]:checked ~ .burg {
+    display: block;
+  }
+  .main input[id="burg2"]:checked ~ .burg2 {
+    display: none;
+  }
+  .main .label-menu {
+    cursor: pointer;
+    background: #26d3c8;
+    margin: 0;
+    padding: 10px 12px;
+    width: 200px;
+    text-align: center;
+    font-size: 10px;
+    right: 0;
+    transform: translateX(150%);
+    z-index: 999;
+    color: #ffffff;
+  }
+  .main .metro-text {
+    position: absolute;
+    padding: 12px 12px;
+    width: 250px;
+    transform: translate(105%, -100%);
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .main .metro-text-header h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .main .metro-text p {
+    margin: 30px auto 65px;
+    line-height: 14px;
+    text-align: justify;
+    font-size: 11px;
+  }
+  .main .metro-text-btn {
+    background-color: rgba(63, 58, 193, 0.92);
+  }
+  .info {
+    text-align: center;
+  }
+  .info-slider-item {
+    background: url(../img/mobile-header.jpg) bottom no-repeat;
+    background-size: 100% 300px;
+  }
+  .info-slider-item-text {
+    position: relative;
+    border: none;
+    transform: translate(20%, 30%);
+    margin-top: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+  .info-slider-item-text .circle {
+    width: 92px;
+    height: 92px;
+    background: #26d3c8;
+    border-radius: 50%;
+  }
+  .info-slider-item-text .circle img {
+    display: block;
+    margin: 10px auto;
+  }
+  .info-slider-item-text p {
+    margin-top: 20px;
+    transform: translateX(-17%);
+    color: #ffffff;
+    font-size: 14px;
+    width: 350px;
+  }
+  .info-link {
+    display: none;
+  }
+  .news-btn {
+    position: relative;
+    display: inline-block;
+    padding: 15px 10px;
+    width: 30%;
+    padding-right: 5px;
+    font-size: 10px;
+    border: none;
+    background-color: rgba(63, 58, 193, 0.92);
+  }
+  .news-btn img {
+    width: 40px;
+  }
+  .footer {
+    background: url(../img/footer-bg.jpg) right bottom no-repeat;
+    background-size: cover;
+  }
+  .footer .section-header {
+    display: none;
+  }
+  .footer-slider {
+    display: none;
+  }
+  .footer-text {
+    font-size: 10px;
+  }
+  .footer-item {
+    font-size: 10px;
+  }
+  .footer-item-btn {
+    padding: 5px 10px;
+    margin: 0;
+    margin-bottom: 33px;
+  }
 }
