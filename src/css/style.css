@@ -349,7 +349,6 @@ section {
     font-size: 10px;
     right: 0;
     transform: translateX(150%);
-    z-index: 999;
     color: #ffffff;
   }
   .main .metro-text {
@@ -399,8 +398,9 @@ section {
   }
   .info-slider-item-text p {
     margin-top: 20px;
-    transform: translateX(-17%);
+    transform: translate(-17%, -10%);
     color: #ffffff;
+    line-height: 1.4;
     font-size: 14px;
     width: 350px;
   }
